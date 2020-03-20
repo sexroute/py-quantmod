@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup,find_packages
 
 
 exec (open('quantmod/version.py').read())  # noqa
@@ -13,7 +13,7 @@ setup(
     license='MIT',
     keywords=['pandas', 'plotly', 'ta-lib', 'data-visualization',
               'data-science', 'quantitative-finance', 'quantitative-trading'],
-    packages=['quantmod'],
+    packages=find_packages(),
     install_requires=[
         'numpy',
         'pandas',
